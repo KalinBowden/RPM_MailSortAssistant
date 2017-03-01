@@ -29,36 +29,38 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBxList = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBxLastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtBxDept = new System.Windows.Forms.TextBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBxFirstName = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(5, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(383, 46);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mail Sort Assistant";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // txtBxList
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(416, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(469, 559);
-            this.textBox2.TabIndex = 4;
+            this.txtBxList.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtBxList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txtBxList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxList.Location = new System.Drawing.Point(394, 0);
+            this.txtBxList.Multiline = true;
+            this.txtBxList.Name = "txtBxList";
+            this.txtBxList.Size = new System.Drawing.Size(469, 559);
+            this.txtBxList.TabIndex = 4;
             // 
             // label2
             // 
@@ -70,13 +72,14 @@
             this.label2.TabIndex = 6;
             this.label2.Text = " Last Name:";
             // 
-            // textBox1
+            // txtBxLastName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(20, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 40);
-            this.textBox1.TabIndex = 5;
+            this.txtBxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxLastName.Location = new System.Drawing.Point(20, 123);
+            this.txtBxLastName.Name = "txtBxLastName";
+            this.txtBxLastName.Size = new System.Drawing.Size(296, 40);
+            this.txtBxLastName.TabIndex = 5;
+            this.txtBxLastName.TextChanged += new System.EventHandler(this.txtBxLastName_TextChanged);
             // 
             // label3
             // 
@@ -87,27 +90,25 @@
             this.label3.Size = new System.Drawing.Size(68, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Dept:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // txtBxDept
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(20, 315);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 40);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtBxDept.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxDept.Location = new System.Drawing.Point(20, 315);
+            this.txtBxDept.Name = "txtBxDept";
+            this.txtBxDept.Size = new System.Drawing.Size(296, 40);
+            this.txtBxDept.TabIndex = 7;
+            this.txtBxDept.TextChanged += new System.EventHandler(this.txtBxDept_TextChanged);
             // 
-            // button1
+            // btnHelp
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(358, 498);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 49);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "?";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Location = new System.Drawing.Point(336, 446);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(52, 49);
+            this.btnHelp.TabIndex = 9;
+            this.btnHelp.Text = "?";
+            this.btnHelp.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -119,28 +120,51 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "First Name:";
             // 
-            // textBox4
+            // txtBxFirstName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(20, 220);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(246, 40);
-            this.textBox4.TabIndex = 10;
+            this.txtBxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxFirstName.Location = new System.Drawing.Point(20, 220);
+            this.txtBxFirstName.Name = "txtBxFirstName";
+            this.txtBxFirstName.Size = new System.Drawing.Size(296, 40);
+            this.txtBxFirstName.TabIndex = 10;
+            this.txtBxFirstName.TextChanged += new System.EventHandler(this.txtBxFirstName_TextChanged);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(20, 444);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(133, 51);
+            this.btnAdd.TabIndex = 12;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(186, 444);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(130, 51);
+            this.btnEdit.TabIndex = 13;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(885, 559);
+            this.ClientSize = new System.Drawing.Size(863, 559);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtBxFirstName);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtBxDept);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtBxLastName);
+            this.Controls.Add(this.txtBxList);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Mail Sort Assistiant";
@@ -151,14 +175,16 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBxList;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBxLastName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtBxDept;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBxFirstName;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
