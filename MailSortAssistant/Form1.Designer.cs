@@ -59,7 +59,7 @@
             this.txtBxList.Location = new System.Drawing.Point(394, 0);
             this.txtBxList.Multiline = true;
             this.txtBxList.Name = "txtBxList";
-            this.txtBxList.Size = new System.Drawing.Size(469, 559);
+            this.txtBxList.Size = new System.Drawing.Size(447, 479);
             this.txtBxList.TabIndex = 4;
             // 
             // label2
@@ -103,7 +103,7 @@
             // btnHelp
             // 
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.Location = new System.Drawing.Point(336, 446);
+            this.btnHelp.Location = new System.Drawing.Point(336, 413);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(52, 49);
             this.btnHelp.TabIndex = 9;
@@ -132,7 +132,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(20, 444);
+            this.btnAdd.Location = new System.Drawing.Point(20, 411);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(133, 51);
             this.btnAdd.TabIndex = 12;
@@ -142,7 +142,7 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(186, 444);
+            this.btnEdit.Location = new System.Drawing.Point(186, 411);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(130, 51);
             this.btnEdit.TabIndex = 13;
@@ -154,7 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(863, 559);
+            this.ClientSize = new System.Drawing.Size(841, 479);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label4);

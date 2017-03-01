@@ -34,7 +34,7 @@ namespace MailSortAssistant
         /// <param name="e"></param>
         private void txtBxLastName_TextChanged(object sender, EventArgs e)
         {
-
+            SearchData("last", txtBxLastName.Text);
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace MailSortAssistant
         /// <param name="e"></param>
         private void txtBxFirstName_TextChanged(object sender, EventArgs e)
         {
-
+            SearchData("first", txtBxFirstName.Text);
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace MailSortAssistant
         /// <param name="e"></param>
         private void txtBxDept_TextChanged(object sender, EventArgs e)
         {
-
+            SearchData("dept", txtBxDept.Text);
         }
 
 
@@ -63,9 +63,17 @@ namespace MailSortAssistant
         /// TODO: Will search the data through the selected catagorey.
         /// </summary>
         /// <param name="dataCat"></param>
-        public static void searchData(string dataCat, string value)
+        public static void SearchData(string dataCat, string value)
         {
             //TODO
+        }
+
+        /// <summary>
+        /// This will disenable all other fields while text is curretnly in a field.
+        /// </summary>
+        public static void ControlDataEntry()
+        {
+            //TODO.
         }
     }// End of Class.
 }// End of Solution.
