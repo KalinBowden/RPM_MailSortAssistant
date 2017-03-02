@@ -77,7 +77,7 @@
             this.txtBxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxLastName.Location = new System.Drawing.Point(12, 38);
             this.txtBxLastName.Name = "txtBxLastName";
-            this.txtBxLastName.Size = new System.Drawing.Size(226, 31);
+            this.txtBxLastName.Size = new System.Drawing.Size(264, 31);
             this.txtBxLastName.TabIndex = 3;
             // 
             // label2
@@ -95,7 +95,7 @@
             this.txtBxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxFirstName.Location = new System.Drawing.Point(12, 141);
             this.txtBxFirstName.Name = "txtBxFirstName";
-            this.txtBxFirstName.Size = new System.Drawing.Size(226, 31);
+            this.txtBxFirstName.Size = new System.Drawing.Size(264, 31);
             this.txtBxFirstName.TabIndex = 5;
             // 
             // label3
@@ -113,7 +113,7 @@
             this.txtBxDept.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxDept.Location = new System.Drawing.Point(12, 243);
             this.txtBxDept.Name = "txtBxDept";
-            this.txtBxDept.Size = new System.Drawing.Size(226, 31);
+            this.txtBxDept.Size = new System.Drawing.Size(264, 31);
             this.txtBxDept.TabIndex = 7;
             // 
             // txtBxNote

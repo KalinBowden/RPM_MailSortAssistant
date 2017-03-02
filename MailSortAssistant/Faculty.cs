@@ -18,6 +18,7 @@ namespace MailSortAssistant
         private string lastName;
         private string dept;
         private string note;
+        private string name;
 
         /// <summary>
         /// Public constructor: Sets all values to defaults.
@@ -29,6 +30,7 @@ namespace MailSortAssistant
             this.lastName = "Not Set";
             this.dept = "###";
             this.note = "-none-";
+            this.name = "Not Set";
         }
 
 
@@ -95,16 +97,17 @@ namespace MailSortAssistant
 
             set
             {
-                //
-                if (value.Length > 3 || value.Length < 3)
-                {
-                    //TODO: add warning.
-                    dept = "###";
-                }
-                else
-                {
-                    dept = value;
-                }
+                ////
+                //if (value.Length > 3 || value.Length < 3)
+                //{
+                //    //TODO: add warning.
+                //    dept = "###";
+                //}
+                //else
+                //{
+                //    dept = value;
+                //}
+                dept = value;
             }
         }
 
@@ -133,6 +136,22 @@ namespace MailSortAssistant
             }
         }
 
+        /// <summary>
+        /// Get or set the Faculty Name.
+        /// </summary>
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
 
 
         /// <summary>
@@ -141,7 +160,13 @@ namespace MailSortAssistant
         /// <returns></returns>
         public override string ToString()
         {
-            return "Last Name: " + this.lastName +"First Name: " + this.firstName + "Dept: " + "/n";
+            // Method level variables.
+            string newString;
+
+            // Format stirng.
+            newString = string.Format("Name: {0,-40} Dept: {1}", this.name, this.dept);
+
+            return newString;
         }
 
     }// End of Class.
